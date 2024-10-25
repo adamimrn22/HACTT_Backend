@@ -1,26 +1,46 @@
 /*
   SPDX-License-Identifier: Apache-2.0
+  Smart Contract for test case management
 */
 
 import {Object, Property} from 'fabric-contract-api';
 
 @Object()
 export class Asset {
-    @Property()
-    public docType?: string;
 
     @Property()
-    public ID: string = '';
+    public idtest_cases: string;
 
     @Property()
-    public Color: string = '';
+    public test_desc: string;
 
     @Property()
-    public Size: number = 0;
+    public deadline: string;
+
+    // @Property()
+    // public dateUpdated: string;
 
     @Property()
-    public Owner: string = '';
+    public projectId: string;
+
+    // @Property()
+    // public reason: string;
 
     @Property()
-    public AppraisedValue: number = 0;
+    public testCaseName: string;
+
+    @Property()
+    public dateCreated: string;
+
+    @Property()
+    public overallStatus: string;
+
+    @Property()
+    public username: string;
+
+    // @Property()
+    // public createdBy: string;
+
+    // @Property()
+    // public status: string;
 }
